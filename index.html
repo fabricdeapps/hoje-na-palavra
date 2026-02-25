@@ -1,0 +1,2875 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hoje na Palavra — Reflexões Bíblicas Diárias | Gratuito</title>
+<meta name="description" content="Reflexões bíblicas diárias de 3 a 5 minutos direto no seu e-mail e WhatsApp. Mais de 3.000 cristãos já transformaram sua rotina espiritual. 100% gratuito.">
+<meta name="keywords" content="devocional cristão, reflexões bíblicas, palavra diária, vida espiritual, devocional whatsapp, devocional email">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://hojenapalavra.com.br/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Hoje na Palavra — Fortaleça sua fé em minutos por dia">
+<meta property="og:description" content="Reflexões bíblicas curtas, profundas e aplicáveis ao seu dia. +3.000 cristãos já fazem parte. 100% gratuito.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hojenapalavra.com.br/">
+<meta property="og:image" content="https://hojenapalavra.com.br/og-image.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hoje na Palavra — Reflexões Bíblicas Diárias">
+<meta name="twitter:description" content="Fortaleça sua fé com reflexões diárias de 3 a 5 minutos. Gratuito!">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hoje na Palavra",
+  "url": "https://hojenapalavra.com.br",
+  "description": "Reflexões bíblicas diárias para cristãos brasileiros",
+  "foundingDate": "2024",
+  "areaServed": "BR"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════════
+   DESIGN SYSTEM — HOJE NA PALAVRA
+   Estratégia visual: Luxury Sacred / Editorial Dark
+   Justificativa: Combina autoridade espiritual com
+   sofisticação visual que gera confiança e percepção
+   de valor premium, mesmo sendo gratuito.
+══════════════════════════════════════════════ */
+:root {
+  /* Cores primárias — Navy profundo transmite seriedade e paz */
+  --navy:        #080D1A;
+  --navy-mid:    #0D1424;
+  --navy-card:   #111B30;
+  --navy-border: #1C2A45;
+  --navy-hover:  #172038;
+
+  /* Ouro — símbolo de valor divino e preciosidade */
+  --gold:        #C9A227;
+  --gold-light:  #E4C054;
+  --gold-pale:   #F2D982;
+  --gold-dim:    rgba(201,162,39,0.14);
+  --gold-glow:   rgba(201,162,39,0.06);
+
+  /* Acento — azul celeste para elementos de confiança */
+  --sky:         #4A9EBF;
+  --sky-dim:     rgba(74,158,191,0.12);
+
+  /* Texto */
+  --white:       #FFFFFF;
+  --off-white:   #F8F5EE;
+  --light-text:  #C4CDD9;
+  --muted:       #7A8699;
+  --dark-text:   #1A2540;
+
+  /* Tipografia */
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans:  'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing & Radius */
+  --r-sm:  8px;
+  --r-md:  14px;
+  --r-lg:  20px;
+  --r-xl:  32px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 30px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.03);
+  --shadow-gold: 0 8px 40px rgba(201,162,39,0.25);
+  --shadow-hover: 0 16px 60px rgba(0,0,0,0.5);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--sans);
+  background: var(--navy);
+  color: var(--white);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* GRAIN OVERLAY — profundidade e textura premium */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+/* ─── TOAST NOTIFICATIONS (Social Proof) ─────── */
+#toast-container {
+  position: fixed;
+  bottom: 100px;
+  left: 24px;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--r-md);
+  padding: 12px 16px;
+  max-width: 280px;
+  box-shadow: var(--shadow-card);
+  animation: toastIn 0.4s cubic-bezier(0.16,1,0.3,1) both;
+  pointer-events: auto;
+  cursor: default;
+}
+
+.toast.out { animation: toastOut 0.3s ease forwards; }
+.toast-avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--gold-dim);
+  border: 2px solid rgba(201,162,39,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 1rem;
+  color: var(--gold);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.toast-content { flex: 1; min-width: 0; }
+.toast-name { font-size: 0.8rem; font-weight: 600; color: var(--white); }
+.toast-msg  { font-size: 0.72rem; color: var(--muted); line-height: 1.4; margin-top: 1px; }
+
+@keyframes toastIn  { from { opacity:0; transform:translateX(-20px) scale(0.95); } to { opacity:1; transform:none; } }
+@keyframes toastOut { from { opacity:1; transform:none; } to { opacity:0; transform:translateX(-20px); } }
+
+/* ─── NAVBAR ──────────────────────────────────── */
+#navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  padding: 16px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(8,13,26,0.82);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  border-bottom: 1px solid rgba(201,162,39,0.08);
+  transition: all 0.3s ease;
+}
+
+#navbar.scrolled {
+  background: rgba(8,13,26,0.97);
+  border-bottom-color: rgba(201,162,39,0.14);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-logo-cross {
+  color: var(--gold);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.nav-logo span { color: var(--gold); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  transition: color 0.2s;
+  letter-spacing: 0.01em;
+}
+
+.nav-links a:hover { color: var(--white); }
+
+.nav-cta {
+  background: var(--gold) !important;
+  color: var(--navy) !important;
+  padding: 9px 22px !important;
+  border-radius: var(--r-sm) !important;
+  font-weight: 600 !important;
+  font-size: 0.84rem !important;
+  transition: all 0.2s ease !important;
+  letter-spacing: 0.02em;
+}
+
+.nav-cta:hover {
+  background: var(--gold-light) !important;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-gold) !important;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 65px; left: 0; right: 0;
+  background: var(--navy-mid);
+  border-bottom: 1px solid var(--navy-border);
+  padding: 1.5rem 5%;
+  z-index: 199;
+  flex-direction: column;
+  gap: 1.2rem;
+  transform: translateY(-8px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.mobile-menu.open {
+  display: flex;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-menu a {
+  color: var(--light-text);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--navy-border);
+}
+
+.mobile-cta {
+  background: var(--gold);
+  color: var(--navy) !important;
+  text-align: center;
+  padding: 14px !important;
+  border-radius: var(--r-sm);
+  font-weight: 600 !important;
+  border: none;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+/* ─── HERO ────────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 5% 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Starfield background effect */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 20%, rgba(201,162,39,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 10% 80%, rgba(74,158,191,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 100% at 50% 0%, rgba(13,20,36,0.9) 0%, var(--navy) 70%);
+  pointer-events: none;
+}
+
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 1px; height: 1px;
+  background: rgba(201,162,39,0.6);
+  border-radius: 50%;
+  animation: twinkle var(--dur, 4s) var(--delay, 0s) ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.1; transform: scale(1); }
+  to   { opacity: 0.8; transform: scale(2); }
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 5rem;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── HERO BADGE ──── */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, rgba(201,162,39,0.16), rgba(201,162,39,0.06));
+  border: 1px solid rgba(201,162,39,0.28);
+  border-radius: 100px;
+  padding: 7px 18px;
+  font-size: 0.76rem;
+  color: var(--gold-light);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.2s ease forwards;
+}
+
+.badge-dot {
+  width: 6px; height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: pulseDot 2s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulseDot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201,162,39,0.5); }
+  50% { box-shadow: 0 0 0 5px rgba(201,162,39,0); }
+}
+
+/* ─── VERSE DISPLAY ── */
+.verse-of-day {
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.35s ease forwards;
+}
+
+.verse-eyebrow {
+  font-size: 0.75rem;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.verse-eyebrow::after {
+  content: '';
+  flex: 1;
+  max-width: 40px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.4;
+}
+
+.verse-text {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3.2vw, 2.9rem);
+  font-weight: 600;
+  line-height: 1.22;
+  color: var(--white);
+  font-style: italic;
+  letter-spacing: -0.015em;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.verse-ref {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  color: var(--gold);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+/* ─── HERO SUBTITLE ── */
+.hero-sub {
+  font-size: 1.06rem;
+  color: var(--light-text);
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.5s ease forwards;
+  font-weight: 300;
+}
+
+/* ─── URGENCY BAR ──── */
+.urgency-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(201,162,39,0.07);
+  border: 1px solid rgba(201,162,39,0.2);
+  border-radius: var(--r-sm);
+  padding: 10px 16px;
+  margin-bottom: 1.5rem;
+  font-size: 0.82rem;
+  color: var(--gold-light);
+  font-weight: 500;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.6s ease forwards;
+}
+
+.urgency-icon { font-size: 1rem; }
+.urgency-count { font-weight: 700; color: var(--gold); }
+
+/* ─── HERO FORM ───── */
+.hero-form-wrap {
+  opacity: 0;
+  animation: fadeUp 0.9s 0.7s ease forwards;
+}
+
+.form-group { margin-bottom: 0.7rem; position: relative; }
+
+.form-group input {
+  width: 100%;
+  padding: 15px 16px 15px 46px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r-md);
+  color: var(--white);
+  font-size: 0.95rem;
+  font-family: var(--sans);
+  transition: all 0.25s ease;
+  -webkit-appearance: none;
+}
+
+.form-group input::placeholder { color: var(--muted); }
+
+.form-group input:focus {
+  outline: none;
+  border-color: rgba(201,162,39,0.6);
+  background: rgba(201,162,39,0.04);
+  box-shadow: 0 0 0 3px rgba(201,162,39,0.09);
+}
+
+.form-group input.error {
+  border-color: rgba(239,68,68,0.6);
+  box-shadow: 0 0 0 3px rgba(239,68,68,0.1);
+  animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+.form-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  font-size: 1.05rem;
+  pointer-events: none;
+}
+
+/* Country selector */
+.phone-wrap { position: relative; }
+
+.country-select-btn {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px 0 12px;
+  cursor: pointer;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  z-index: 2;
+  border-radius: var(--r-md) 0 0 var(--r-md);
+  gap: 3px;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.country-select-btn:hover { background: rgba(255,255,255,0.04); }
+
+.country-flag { font-size: 1.1rem; line-height: 1; }
+.country-code { font-size: 0.76rem; color: var(--light-text); font-weight: 500; white-space: nowrap; }
+.country-arrow { font-size: 0.5rem; color: var(--muted); transition: transform 0.2s; flex-shrink: 0; }
+.country-arrow.open { transform: rotate(180deg); }
+
+.country-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 290px;
+  background: #152035;
+  border: 1px solid var(--navy-border);
+  border-radius: var(--r-lg);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+  z-index: 1000;
+  overflow: hidden;
+  animation: slideDown 0.2s cubic-bezier(0.16,1,0.3,1);
+}
+
+.country-dropdown.open { display: block; }
+
+@keyframes slideDown {
+  from { opacity:0; transform:translateY(-6px); }
+  to   { opacity:1; transform:none; }
+}
+
+.country-search-wrap {
+  padding: 10px;
+  border-bottom: 1px solid var(--navy-border);
+}
+
+.country-search {
+  width: 100%;
+  padding: 9px 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--r-sm);
+  color: var(--white);
+  font-size: 0.85rem;
+  font-family: var(--sans);
+}
+
+.country-search:focus { outline: none; border-color: rgba(201,162,39,0.4); }
+.country-search::placeholder { color: var(--muted); }
+
+.country-list {
+  max-height: 220px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--navy-border) transparent;
+}
+
+.country-list::-webkit-scrollbar { width: 4px; }
+.country-list::-webkit-scrollbar-track { background: transparent; }
+.country-list::-webkit-scrollbar-thumb { background: var(--navy-border); border-radius: 2px; }
+
+.country-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+  font-size: 0.86rem;
+}
+
+.country-item:hover { background: rgba(201,162,39,0.07); }
+.country-item.active { background: rgba(201,162,39,0.12); }
+.country-item .ci-flag { font-size: 1.1rem; flex-shrink: 0; }
+.country-item .ci-name { flex: 1; color: var(--light-text); }
+.country-item .ci-dial { color: var(--gold); font-size: 0.79rem; font-weight: 600; }
+
+.phone-input { padding-left: 98px !important; }
+
+.btn-primary {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #D4A82A, #C9A227 50%, #B8921F);
+  color: var(--navy);
+  border: none;
+  border-radius: var(--r-md);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.02em;
+  margin-top: 0.4rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(201,162,39,0.3);
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: left 0.4s ease;
+}
+
+.btn-primary:hover::before { left: 100%; }
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #E4BC4A, #D4A82A 50%, #C9A227);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 35px rgba(201,162,39,0.45);
+}
+
+.btn-primary:active { transform: translateY(0); box-shadow: none; }
+
+.btn-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.spinner {
+  width: 16px; height: 16px;
+  border: 2px solid rgba(8,13,26,0.3);
+  border-top-color: var(--navy);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.form-trust {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 0.9rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.form-trust-icons { display: flex; gap: 12px; }
+.trust-item { display: flex; align-items: center; gap: 4px; }
+
+.social-proof-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1.4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--navy-border);
+}
+
+.avatars { display: flex; }
+
+.avatar-circle {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--navy);
+  margin-left: -8px;
+  background: var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 0.85rem;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.avatars .avatar-circle:first-child { margin-left: 0; }
+
+.social-proof-text { font-size: 0.82rem; color: var(--muted); line-height: 1.45; }
+.social-proof-text strong { color: var(--white); }
+
+/* ─── THANK YOU SCREEN ── */
+.thank-you-screen {
+  display: none;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.thank-you-screen.show { display: block; animation: fadeUp 0.5s ease both; }
+.ty-icon { font-size: 3rem; margin-bottom: 1rem; }
+.ty-title { font-family: var(--serif); font-size: 1.8rem; font-weight: 600; margin-bottom: 0.7rem; }
+.ty-text { color: var(--muted); font-size: 0.93rem; line-height: 1.7; margin-bottom: 1.5rem; }
+
+.share-btns { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border-radius: var(--r-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-family: var(--sans);
+  transition: all 0.2s;
+}
+
+.share-whatsapp { background: #25D366; color: white; }
+.share-instagram { background: linear-gradient(135deg, #833AB4, #C13584, #FD1D1D); color: white; }
+.share-btn:hover { opacity: 0.92; transform: translateY(-2px); }
+
+/* ─── PHONE MOCKUP ──── */
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.9s ease forwards;
+  position: relative;
+}
+
+.phone-halo {
+  position: absolute;
+  width: 340px; height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(201,162,39,0.1) 0%, transparent 70%);
+  animation: haloBreath 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes haloBreath {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.08); opacity: 0.8; }
+}
+
+.phone-mockup {
+  width: 265px;
+  background: var(--navy-card);
+  border-radius: 42px;
+  border: 1.5px solid var(--navy-border);
+  box-shadow:
+    0 50px 100px rgba(0,0,0,0.65),
+    0 20px 40px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    inset 0 -1px 0 rgba(0,0,0,0.3);
+  position: relative;
+  overflow: hidden;
+  transform: perspective(900px) rotateY(-8deg) rotateX(4deg);
+  transition: transform 0.6s cubic-bezier(0.16,1,0.3,1);
+}
+
+.phone-mockup:hover {
+  transform: perspective(900px) rotateY(-4deg) rotateX(2deg) translateY(-8px);
+}
+
+.phone-notch {
+  width: 88px; height: 22px;
+  background: var(--navy);
+  border-radius: 0 0 14px 14px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.phone-screen { padding: 1rem 1.1rem 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
+
+.mock-status { display: flex; justify-content: space-between; align-items: center; }
+.mock-time { font-size: 0.7rem; font-weight: 600; color: var(--white); }
+.mock-icons { font-size: 0.65rem; color: var(--white); opacity: 0.8; display: flex; gap: 4px; }
+
+.mock-app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--navy-border);
+}
+
+.mock-logo { font-family: var(--serif); font-size: 0.85rem; font-weight: 600; color: var(--gold); }
+.mock-date { font-size: 0.6rem; color: var(--muted); background: var(--gold-dim); padding: 3px 8px; border-radius: 20px; }
+
+.mock-verse-card {
+  background: linear-gradient(135deg, rgba(201,162,39,0.13), rgba(201,162,39,0.04));
+  border: 1px solid rgba(201,162,39,0.2);
+  border-radius: 16px;
+  padding: 1rem 0.9rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.mock-verse-card::before {
+  content: '❝';
+  position: absolute;
+  top: 4px; left: 8px;
+  font-size: 2.2rem;
+  color: var(--gold);
+  opacity: 0.25;
+  font-family: serif;
+  line-height: 1;
+}
+
+.mock-verse-text {
+  font-family: var(--serif);
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--white);
+  margin-top: 0.6rem;
+}
+
+.mock-verse-ref { font-size: 0.62rem; color: var(--gold); font-weight: 600; margin-top: 0.45rem; letter-spacing: 0.05em; }
+
+.mock-insight {
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 0.65rem 0.7rem;
+  border: 1px solid var(--navy-border);
+}
+
+.mock-label { font-size: 0.57rem; color: var(--gold); font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; margin-bottom: 0.25rem; }
+.mock-text  { font-size: 0.67rem; color: var(--light-text); line-height: 1.45; }
+
+.mock-action {
+  background: var(--gold);
+  border-radius: 10px;
+  padding: 0.6rem;
+  text-align: center;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0.02em;
+}
+
+.mock-streak {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.02);
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--navy-border);
+}
+
+.streak-label { font-size: 0.57rem; color: var(--muted); font-weight: 500; }
+.streak-num { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; color: var(--gold); }
+.streak-fire { font-size: 1rem; }
+
+/* ─── SECTION HELPERS ─ */
+section { position: relative; z-index: 1; }
+
+.section-inner { max-width: 1100px; margin: 0 auto; }
+
+.section-eyebrow {
+  font-size: 0.73rem;
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-eyebrow::before {
+  content: '';
+  width: 22px; height: 1px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.9rem;
+  letter-spacing: -0.02em;
+}
+
+.section-sub {
+  font-size: 1.03rem;
+  color: var(--muted);
+  max-width: 540px;
+  line-height: 1.75;
+  margin-bottom: 3.5rem;
+  font-weight: 300;
+}
+
+/* ─── STATS BAR ─────── */
+.stats-bar {
+  padding: 32px 5%;
+  background: var(--navy-mid);
+  border-top: 1px solid var(--navy-border);
+  border-bottom: 1px solid var(--navy-border);
+}
+
+.stats-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.stat-item { text-align: center; }
+
+.stat-number {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.stat-label { font-size: 0.8rem; color: var(--muted); font-weight: 400; }
+
+.stat-divider {
+  width: 1px;
+  height: 50px;
+  background: var(--navy-border);
+  margin: 0 auto;
+}
+
+/* ─── PROBLEM SECTION ─ */
+.problem {
+  padding: 100px 5%;
+  background: var(--navy);
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.problem-card {
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--r-lg);
+  padding: 2rem 1.8rem;
+  transition: all 0.35s cubic-bezier(0.16,1,0.3,1);
+  position: relative;
+  overflow: hidden;
+}
+
+.problem-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(201,162,39,0.22);
+  box-shadow: var(--shadow-hover);
+}
+
+.problem-card:hover::after { opacity: 1; }
+
+.problem-icon {
+  width: 52px; height: 52px;
+  background: var(--gold-dim);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.3rem;
+  border: 1px solid rgba(201,162,39,0.14);
+}
+
+.problem-card h3 {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.problem-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
+
+/* ─── SOLUTION SECTION ─ */
+.solution {
+  padding: 100px 5%;
+  background: var(--navy-mid);
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.solution-features { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.feature-item {
+  display: flex;
+  gap: 1.2rem;
+  padding: 1.4rem;
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--r-md);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.feature-item:hover {
+  border-color: rgba(201,162,39,0.22);
+  background: rgba(201,162,39,0.03);
+  transform: translateX(6px);
+}
+
+.feature-icon-wrap {
+  width: 46px; height: 46px;
+  min-width: 46px;
+  background: var(--gold-dim);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
+.feature-item h4 {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.feature-item p { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+/* Orbiting Cross Decoration */
+.solution-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit-system {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(201,162,39,0.1);
+}
+
+.orbit-1 { width: 280px; height: 280px; animation: orbit-rot 50s linear infinite; }
+.orbit-2 { width: 200px; height: 200px; animation: orbit-rot 35s linear infinite reverse; border-color: rgba(201,162,39,0.16); }
+.orbit-3 { width: 130px; height: 130px; animation: orbit-rot 22s linear infinite; border-color: rgba(201,162,39,0.24); }
+
+.orbit-dot {
+  position: absolute;
+  width: 6px; height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px var(--gold);
+}
+
+@keyframes orbit-rot {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.orbit-center {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  background: var(--navy-card);
+  border-radius: 50%;
+  width: 110px; height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(201,162,39,0.2);
+  box-shadow: 0 0 40px rgba(201,162,39,0.12), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.orbit-cross {
+  font-size: 2.5rem;
+  display: block;
+  line-height: 1;
+  filter: drop-shadow(0 0 15px rgba(201,162,39,0.6));
+}
+
+.orbit-verse {
+  font-family: var(--serif);
+  font-size: 0.76rem;
+  font-style: italic;
+  color: var(--light-text);
+  max-width: 180px;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.orbit-verse small { color: var(--gold); font-style: normal; font-size: 0.7rem; display: block; margin-top: 3px; }
+
+/* ─── HOW IT WORKS ─── */
+.how {
+  padding: 100px 5%;
+  background: var(--navy);
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3.5rem;
+  position: relative;
+}
+
+.how-grid::before {
+  content: '';
+  position: absolute;
+  top: 44px;
+  left: calc(16.66% + 22px);
+  right: calc(16.66% + 22px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,162,39,0.25), rgba(201,162,39,0.25), transparent);
+}
+
+.step-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.step-num {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  background: var(--gold-dim);
+  border: 1px solid rgba(201,162,39,0.28);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.step-card:hover .step-num {
+  background: rgba(201,162,39,0.2);
+  border-color: var(--gold);
+  box-shadow: 0 0 30px rgba(201,162,39,0.2), 0 0 60px rgba(201,162,39,0.08);
+  transform: scale(1.06);
+}
+
+.step-icon  { font-size: 1.55rem; }
+.step-label { font-size: 0.62rem; color: var(--gold); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 2px; }
+.step-card h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; margin-bottom: 0.6rem; }
+.step-card p  { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
+
+/* ─── TESTIMONIALS ────── */
+.testimonials-section {
+  padding: 100px 5%;
+  background: var(--off-white);
+  color: var(--dark-text);
+}
+
+.testimonials-section .section-eyebrow { color: var(--gold); }
+.testimonials-section .section-eyebrow::before { background: var(--gold); }
+.testimonials-section .section-sub { color: #4B5563; }
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.testimonial {
+  background: var(--white);
+  border-radius: var(--r-lg);
+  padding: 2rem;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+}
+
+.stars { color: var(--gold); font-size: 0.88rem; margin-bottom: 0.8rem; letter-spacing: 2px; }
+
+.testimonial-text {
+  font-size: 0.94rem;
+  color: #374151;
+  line-height: 1.75;
+  font-style: italic;
+  margin-bottom: 1.3rem;
+  position: relative;
+}
+
+.testimonial-author { display: flex; align-items: center; gap: 0.85rem; }
+
+.author-av {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-dim), rgba(201,162,39,0.25));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--gold);
+  font-weight: 700;
+  border: 2px solid rgba(201,162,39,0.2);
+  flex-shrink: 0;
+}
+
+.author-name { font-weight: 700; font-size: 0.88rem; color: var(--dark-text); }
+.author-role { font-size: 0.76rem; color: #6B7280; margin-top: 1px; }
+.author-badge { font-size: 0.66rem; color: var(--gold); font-weight: 600; margin-top: 2px; background: rgba(201,162,39,0.1); padding: 1px 8px; border-radius: 20px; display: inline-block; }
+
+/* Social counter */
+.social-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(201,162,39,0.1), rgba(201,162,39,0.06));
+  border: 1px solid rgba(201,162,39,0.25);
+  border-radius: 100px;
+  padding: 12px 24px;
+  margin-bottom: 3rem;
+}
+
+.counter-icon { font-size: 1.15rem; }
+.counter-text { font-size: 0.95rem; color: var(--dark-text); }
+.counter-text strong { color: var(--gold); }
+
+/* ─── FAQ SECTION ─────── */
+.faq-section {
+  padding: 100px 5%;
+  background: var(--navy-mid);
+}
+
+.faq-grid { max-width: 700px; margin: 3rem auto 0; }
+
+.faq-item {
+  border: 1px solid var(--navy-border);
+  border-radius: var(--r-md);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.faq-item.open { border-color: rgba(201,162,39,0.3); }
+
+.faq-question {
+  width: 100%;
+  background: var(--navy-card);
+  border: none;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: var(--sans);
+  text-align: left;
+  gap: 1rem;
+  transition: background 0.2s;
+}
+
+.faq-question:hover { background: var(--navy-hover); }
+.faq-item.open .faq-question { background: rgba(201,162,39,0.04); }
+
+.faq-icon {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(201,162,39,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  transition: transform 0.3s, background 0.2s;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+  background: var(--gold-dim);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer { max-height: 200px; }
+
+.faq-answer-inner {
+  padding: 0 1.5rem 1.2rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.7;
+  background: rgba(201,162,39,0.02);
+}
+
+/* ─── AUTHORITY ───────── */
+.authority {
+  padding: 100px 5%;
+  background: var(--navy);
+  text-align: center;
+}
+
+.authority-quote-wrap {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.quote-mark {
+  font-family: var(--serif);
+  font-size: 5rem;
+  color: var(--gold);
+  opacity: 0.25;
+  line-height: 0.7;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.authority-quote {
+  font-family: var(--serif);
+  font-size: clamp(1.3rem, 2.8vw, 2rem);
+  font-style: italic;
+  color: var(--white);
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.authority-ref {
+  color: var(--gold);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-top: 1rem;
+}
+
+.divider-cross {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 300px;
+  margin: 2.5rem auto;
+  color: rgba(201,162,39,0.3);
+  font-size: 0.8rem;
+}
+
+.divider-cross::before,
+.divider-cross::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(201,162,39,0.2);
+}
+
+.authority-mission {
+  max-width: 540px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.metrics-grid {
+  display: flex;
+  gap: 3.5rem;
+  justify-content: center;
+  margin-top: 3.5rem;
+}
+
+.metric { text-align: center; }
+
+.metric-num {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  display: block;
+}
+
+.metric-label { font-size: 0.78rem; color: var(--muted); margin-top: 0.3rem; }
+
+/* ─── FINAL CTA ─────── */
+.final-cta {
+  padding: 120px 5%;
+  background: var(--navy-mid);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,162,39,0.35), transparent);
+}
+
+.final-cta::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 700px; height: 500px;
+  background: radial-gradient(ellipse, rgba(201,162,39,0.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.final-cta-inner {
+  max-width: 580px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.final-cta h2 {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.final-cta h2 em { font-style: italic; color: var(--gold); }
+
+.final-cta p {
+  color: var(--muted);
+  font-size: 1.03rem;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+/* ─── FOOTER ──────────── */
+footer {
+  padding: 3.5rem 5%;
+  border-top: 1px solid var(--navy-border);
+  text-align: center;
+  background: var(--navy);
+}
+
+.footer-logo {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.footer-logo span { color: var(--gold); }
+.footer-tag { font-size: 0.78rem; color: var(--muted); margin-bottom: 1.5rem; }
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.81rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--white); }
+
+.footer-lgpd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.74rem;
+  color: rgba(122,134,153,0.6);
+}
+
+/* ─── CHAT / FEEDBACK WIDGET ── */
+.chat-widget {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 300;
+}
+
+.chat-btn {
+  width: 58px; height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #D4A82A, #C9A227);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 20px rgba(201,162,39,0.4), 0 2px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.chat-btn:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 8px 30px rgba(201,162,39,0.5);
+}
+
+.chat-badge {
+  position: absolute;
+  top: -2px; right: -2px;
+  width: 14px; height: 14px;
+  background: #EF4444;
+  border-radius: 50%;
+  border: 2px solid var(--navy);
+  animation: pulseDot 2s infinite;
+}
+
+.chat-panel {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 330px;
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--r-xl);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.55);
+  overflow: hidden;
+  animation: slideDown 0.3s cubic-bezier(0.16,1,0.3,1);
+}
+
+.chat-panel.open { display: block; }
+
+.chat-header {
+  background: linear-gradient(135deg, var(--gold-dim), rgba(201,162,39,0.06));
+  padding: 1.3rem 1.5rem;
+  border-bottom: 1px solid var(--navy-border);
+}
+
+.chat-header h4 { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.2rem; }
+.chat-header p  { font-size: 0.77rem; color: var(--muted); }
+
+.chat-body { padding: 1.4rem; }
+
+.chat-field { margin-bottom: 0.75rem; }
+.chat-field label { display: block; font-size: 0.76rem; color: var(--muted); margin-bottom: 0.4rem; font-weight: 600; letter-spacing: 0.02em; }
+
+.chat-field input,
+.chat-field textarea {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--r-sm);
+  padding: 10px 12px;
+  color: var(--white);
+  font-size: 0.85rem;
+  font-family: var(--sans);
+  transition: border 0.2s;
+  resize: none;
+}
+
+.chat-field input:focus,
+.chat-field textarea:focus { outline: none; border-color: rgba(201,162,39,0.45); }
+
+.chat-field input::placeholder,
+.chat-field textarea::placeholder { color: rgba(122,134,153,0.6); }
+
+.char-count { font-size: 0.68rem; color: var(--muted); text-align: right; margin-top: 3px; }
+
+.chat-submit {
+  width: 100%;
+  padding: 12px;
+  background: var(--gold);
+  color: var(--navy);
+  border: none;
+  border-radius: var(--r-sm);
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 0.4rem;
+}
+
+.chat-submit:hover { background: var(--gold-light); }
+
+/* ─── ANIMATIONS ─────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── SCROLL REVEAL ──── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: all 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ─── RESPONSIVE ──────── */
+@media (max-width: 1024px) {
+  .hero-inner { gap: 3rem; }
+  .phone-mockup { width: 240px; }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .stat-divider { display: none; }
+}
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+
+  .hero { padding: 108px 6% 70px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+  .hero-badge { margin: 0 auto 2rem; }
+  .hero-sub { margin: 0 auto 2rem; }
+  .verse-text { font-size: clamp(1.6rem, 5.5vw, 2.4rem); }
+  .verse-eyebrow { justify-content: center; }
+  .verse-eyebrow::after { display: none; }
+  .urgency-bar { justify-content: center; }
+  .social-proof-bar { justify-content: center; }
+  .hero-form-wrap, .hero-visual { width: 100%; max-width: 420px; margin: 0 auto; }
+  .hero-visual { order: -1; }
+  .phone-halo { display: none; }
+  .phone-mockup { transform: none !important; width: 210px; margin: 0 auto; }
+
+  .stats-inner { grid-template-columns: repeat(2, 1fr); }
+
+  .problem { padding: 80px 6%; }
+  .problem-grid { grid-template-columns: 1fr; gap: 1rem; max-width: 480px; margin: 0 auto; }
+
+  .solution { padding: 80px 6%; }
+  .solution-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .solution-visual { display: none; }
+
+  .how { padding: 80px 6%; }
+  .how-grid { grid-template-columns: 1fr; gap: 1.2rem; max-width: 480px; margin: 1.5rem auto 0; }
+  .how-grid::before { display: none; }
+  .step-card {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    text-align: left;
+    padding: 1.4rem;
+    background: var(--navy-card);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--r-md);
+  }
+  .step-num { margin: 0; min-width: 64px; width: 64px; height: 64px; flex-shrink: 0; }
+
+  .testimonials-section { padding: 80px 6%; }
+  .testimonials-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+
+  .faq-section { padding: 80px 6%; }
+
+  .authority { padding: 80px 6%; }
+  .metrics-grid { gap: 2rem; flex-wrap: wrap; }
+
+  .final-cta { padding: 80px 6%; }
+  .final-cta-inner { max-width: 100%; }
+}
+
+@media (max-width: 600px) {
+  nav { padding: 13px 5%; }
+  .nav-logo { font-size: 1.1rem; }
+
+  .hero { padding: 90px 5% 60px; }
+  .verse-text { font-size: clamp(1.45rem, 6vw, 2rem); }
+  .phone-mockup { width: 185px; }
+  .mock-verse-text { font-size: 0.75rem; }
+
+  .stats-inner { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .stat-number { font-size: 1.8rem; }
+
+  .section-title { font-size: clamp(1.7rem, 6.5vw, 2.4rem); }
+  .section-sub { font-size: 0.93rem; }
+
+  .feature-item { padding: 1.1rem; }
+  .feature-item h4 { font-size: 1rem; }
+
+  .metrics-grid { gap: 1.5rem; }
+  .metric-num { font-size: 1.8rem; }
+
+  .final-cta h2 { font-size: clamp(1.8rem, 7vw, 2.6rem); }
+
+  footer { padding: 2.5rem 5%; }
+  .footer-links { gap: 0.8rem; }
+
+  .chat-widget { bottom: 18px; right: 14px; }
+  .chat-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 0; left: 0;
+    width: 100% !important;
+    max-width: 100%;
+    border-radius: var(--r-xl) var(--r-xl) 0 0;
+    border-left: none; border-right: none; border-bottom: none;
+  }
+
+  #toast-container { left: 12px; right: 12px; }
+  .toast { max-width: 100%; }
+
+  .country-dropdown { width: calc(100vw - 28px); left: -4px; }
+}
+
+@media (max-width: 380px) {
+  .phone-mockup { width: 165px; }
+  .verse-text { font-size: 1.35rem; }
+  .btn-primary { font-size: 0.92rem; padding: 14px; }
+}
+
+@media (hover: none) {
+  .problem-card:hover,
+  .feature-item:hover,
+  .testimonial:hover,
+  .btn-primary:hover { transform: none; }
+  .phone-mockup:hover { transform: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOAST CONTAINER -->
+<div id="toast-container"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <span class="nav-logo-cross">✝</span>
+    Hoje na <span>Palavra</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="javascript:void(0)" onclick="smt('como-funciona')">Como Funciona</a></li>
+    <li><a href="javascript:void(0)" onclick="smt('depoimentos')">Depoimentos</a></li>
+    <li><a href="javascript:void(0)" onclick="smt('faq')">FAQ</a></li>
+    <li><a href="javascript:void(0)" onclick="smt('sobre')">Sobre</a></li>
+    <li><a href="javascript:void(0)" onclick="smt('cadastro')" class="nav-cta">Começar Agora →</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menu mobile">
+  <a href="javascript:void(0)" onclick="smt('inicio'); closeMobileMenu()">Início</a>
+  <a href="javascript:void(0)" onclick="smt('como-funciona'); closeMobileMenu()">Como Funciona</a>
+  <a href="javascript:void(0)" onclick="smt('depoimentos'); closeMobileMenu()">Depoimentos</a>
+  <a href="javascript:void(0)" onclick="smt('faq'); closeMobileMenu()">Perguntas Frequentes</a>
+  <a href="javascript:void(0)" onclick="smt('sobre'); closeMobileMenu()">Sobre</a>
+  <a href="javascript:void(0)" onclick="smt('cadastro'); closeMobileMenu()" class="mobile-cta">Começar Agora — É Gratuito →</a>
+</div>
+
+<!-- ══════════════════════════════════════
+  HERO
+══════════════════════════════════════ -->
+<section class="hero" id="inicio" role="banner">
+  <div class="hero-bg"></div>
+  <div class="hero-particles" id="particles" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+
+    <!-- LEFT: COPY + FORM -->
+    <div class="hero-content">
+      <div class="hero-badge" role="note">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Devocional Cristão Gratuito
+      </div>
+
+      <div class="verse-of-day" aria-label="Versículo do dia">
+        <div class="verse-eyebrow" aria-hidden="true">✦ Versículo de Hoje</div>
+        <p class="verse-text" id="verseText">"Venham a mim, todos os que estão cansados e sobrecarregados, e eu lhes darei descanso."</p>
+        <span class="verse-ref" id="verseRef">— Mateus 11:28</span>
+      </div>
+
+      <p class="hero-sub">
+        Mantenha sua vida espiritual ativa com reflexões bíblicas de <strong>3 a 5 minutos</strong>. Direto no seu e-mail e WhatsApp, todos os dias. Sem excuses, sem pressão.
+      </p>
+
+      <div class="urgency-bar" role="note" aria-live="polite">
+        <span class="urgency-icon">👥</span>
+        <span><span class="urgency-count" id="liveCount">47</span> pessoas se inscreveram hoje. Junte-se a elas!</span>
+      </div>
+
+      <!-- FORM WRAPPER -->
+      <div class="hero-form-wrap" id="heroFormWrap">
+        <div class="form-group">
+          <span class="form-icon" aria-hidden="true">✉</span>
+          <input
+            type="email"
+            id="heroEmail"
+            placeholder="Seu melhor e-mail"
+            autocomplete="email"
+            aria-label="Seu e-mail"
+          >
+        </div>
+        <div class="form-group phone-wrap" id="heroPhoneWrap">
+          <button class="country-select-btn" onclick="toggleDD('hero')" type="button" aria-label="Selecionar país" aria-haspopup="listbox">
+            <span class="country-flag" id="heroFlag">&#x1F1E7;&#x1F1F7;</span>
+            <span class="country-code" id="heroCode">+55</span>
+            <span class="country-arrow" id="heroArrow" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="country-dropdown" id="heroDropdown" role="listbox" aria-label="Países">
+            <div class="country-search-wrap">
+              <input class="country-search" type="text" placeholder="Buscar país..." oninput="filterCountries(this,'hero')" autocomplete="off" aria-label="Buscar país">
+            </div>
+            <div class="country-list" id="heroCountryList"></div>
+          </div>
+          <input
+            type="tel"
+            class="phone-input"
+            id="heroPhone"
+            placeholder="Seu WhatsApp (opcional)"
+            maxlength="20"
+            oninput="phoneMask(this,'hero')"
+            aria-label="Número de WhatsApp"
+          >
+        </div>
+        <button class="btn-primary" id="heroCTA" onclick="handleSignup('hero')" type="button">
+          Quero receber a Palavra diária →
+        </button>
+        <div class="form-trust" role="note">
+          <span aria-hidden="true">🔒</span>
+          <span>100% Gratuito &bull; Sem spam &bull; Cancele quando quiser</span>
+        </div>
+        <div class="social-proof-bar">
+          <div class="avatars" aria-hidden="true">
+            <div class="avatar-circle">M</div>
+            <div class="avatar-circle">J</div>
+            <div class="avatar-circle">A</div>
+            <div class="avatar-circle">+</div>
+          </div>
+          <div class="social-proof-text">
+            <strong><span id="heroCount">3.247</span> pessoas</strong><br>já transformaram sua rotina espiritual
+          </div>
+        </div>
+      </div>
+
+      <!-- THANK YOU -->
+      <div class="thank-you-screen" id="heroThankYou" role="status" aria-live="polite">
+        <div class="ty-icon" aria-hidden="true">🙏</div>
+        <h3 class="ty-title">Bem-vindo à jornada!</h3>
+        <p class="ty-text">Você receberá a primeira reflexão amanhã cedo. Que Deus abençoe cada momento do seu dia.</p>
+        <div class="share-btns">
+          <button class="share-btn share-whatsapp" onclick="shareWhatsApp()" type="button">📱 Compartilhar no WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: PHONE MOCKUP -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="phone-halo"></div>
+      <div class="phone-mockup">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="mock-status">
+            <span class="mock-time" id="mockTime">09:14</span>
+            <span class="mock-icons">▶ ◀ 📶 🔋</span>
+          </div>
+          <div class="mock-app-header">
+            <span class="mock-logo">Hoje na Palavra</span>
+            <span class="mock-date" id="mockDate"></span>
+          </div>
+          <div class="mock-verse-card">
+            <div class="mock-verse-text">"O Senhor é o meu pastor e nada me faltará."</div>
+            <div class="mock-verse-ref">Salmos 23:1</div>
+          </div>
+          <div class="mock-insight">
+            <div class="mock-label">💡 Reflexão</div>
+            <div class="mock-text">Confiar na provisão divina nos liberta da ansiedade. Hoje, entregue suas preocupações a Ele.</div>
+          </div>
+          <div class="mock-action">✅ Aplicar no Meu Dia</div>
+          <div class="mock-streak">
+            <div>
+              <div class="mock-label">Sequência</div>
+              <div class="streak-num">7 dias</div>
+            </div>
+            <div class="streak-fire">🔥</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  STATS BAR
+══════════════════════════════════════ -->
+<div class="stats-bar" role="region" aria-label="Números do Hoje na Palavra">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <span class="stat-number" data-target="3247">0</span>
+      <span class="stat-label">Membros Ativos</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <span class="stat-number">4.9★</span>
+      <span class="stat-label">Avaliação Média</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <span class="stat-number">365</span>
+      <span class="stat-label">Reflexões por Ano</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <span class="stat-number">100%</span>
+      <span class="stat-label">Gratuito Sempre</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  PROBLEM
+══════════════════════════════════════ -->
+<section class="problem" id="problema">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">O Desafio Real</div>
+    <h2 class="section-title reveal">Você não está sozinho<br>nessa luta</h2>
+    <p class="section-sub reveal">Sabemos como é difícil manter constância espiritual em meio à correria. Esses são os obstáculos que a maioria dos cristãos enfrenta todos os dias:</p>
+
+    <div class="problem-grid">
+      <div class="problem-card reveal reveal-delay-1">
+        <div class="problem-icon" aria-hidden="true">⏱</div>
+        <h3>Rotina Corrida</h3>
+        <p>Dias cheios de compromissos deixam pouco tempo para momentos com Deus. A urgência do cotidiano engole o que é essencial.</p>
+      </div>
+      <div class="problem-card reveal reveal-delay-2">
+        <div class="problem-icon" aria-hidden="true">📅</div>
+        <h3>Falta de Consistência</h3>
+        <p>Começar animado e perder o ritmo depois de alguns dias é frustrante. A disciplina espiritual parece impossível de manter.</p>
+      </div>
+      <div class="problem-card reveal reveal-delay-3">
+        <div class="problem-icon" aria-hidden="true">😔</div>
+        <h3>Culpa Espiritual</h3>
+        <p>Sentir que não está dedicando tempo suficiente à sua vida espiritual gera um ciclo de culpa que afasta ainda mais de Deus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  SOLUTION
+══════════════════════════════════════ -->
+<section class="solution" id="solucao">
+  <div class="section-inner">
+    <div class="solution-grid">
+      <div>
+        <div class="section-eyebrow reveal">A Solução</div>
+        <h2 class="section-title reveal">A fé que você deseja,<br>no tempo que você tem</h2>
+        <p class="section-sub reveal">Desenvolvemos uma forma simples e eficaz de manter sua fé ativa todos os dias — sem pressão, sem complicação, sem culpa.</p>
+
+        <div class="solution-features">
+          <div class="feature-item reveal reveal-delay-1">
+            <div class="feature-icon-wrap" aria-hidden="true">📖</div>
+            <div>
+              <h4>Reflexões Curtas e Profundas</h4>
+              <p>Devocionais de 3–5 minutos que cabem na sua rotina sem comprometer a profundidade espiritual.</p>
+            </div>
+          </div>
+          <div class="feature-item reveal reveal-delay-2">
+            <div class="feature-icon-wrap" aria-hidden="true">🎯</div>
+            <div>
+              <h4>Aplicação Prática Diária</h4>
+              <p>Cada reflexão traz um desafio concreto para aplicar a Palavra no seu dia a dia real.</p>
+            </div>
+          </div>
+          <div class="feature-item reveal reveal-delay-3">
+            <div class="feature-icon-wrap" aria-hidden="true">🔔</div>
+            <div>
+              <h4>Notificações Gentis</h4>
+              <p>Lembretes por e-mail e WhatsApp onde você já está — sem apps novos para instalar.</p>
+            </div>
+          </div>
+          <div class="feature-item reveal reveal-delay-4">
+            <div class="feature-icon-wrap" aria-hidden="true">🕊</div>
+            <div>
+              <h4>Zero Distrações</h4>
+              <p>Sem anúncios, sem agenda oculta, sem política — só a Palavra de Deus, pura e aplicável.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="solution-visual reveal">
+        <div class="orbit-system" aria-hidden="true">
+          <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+          <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+          <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
+          <div class="orbit-center">
+            <span class="orbit-cross">✝</span>
+          </div>
+          <div class="orbit-verse">
+            "Porque a palavra de Deus é viva e eficaz"
+            <small>— Hebreus 4:12</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  HOW IT WORKS
+══════════════════════════════════════ -->
+<section class="how" id="como-funciona">
+  <div class="section-inner">
+    <div style="text-align:center;">
+      <div class="section-eyebrow reveal" style="justify-content:center;">Passo a Passo</div>
+      <h2 class="section-title reveal">Como funciona?</h2>
+      <p class="section-sub reveal" style="margin:0 auto;">Três passos simples para transformar sua rotina espiritual — começa hoje, em menos de 2 minutos.</p>
+    </div>
+
+    <div class="how-grid">
+      <div class="step-card reveal reveal-delay-1">
+        <div class="step-num">
+          <div class="step-icon">✉️</div>
+          <div class="step-label">01</div>
+        </div>
+        <div>
+          <h3>Cadastre-se</h3>
+          <p>Informe seu e-mail e WhatsApp. Em segundos você entra para a comunidade e está pronto para começar.</p>
+        </div>
+      </div>
+      <div class="step-card reveal reveal-delay-2">
+        <div class="step-num">
+          <div class="step-icon">📖</div>
+          <div class="step-label">02</div>
+        </div>
+        <div>
+          <h3>Leia Todo Dia</h3>
+          <p>Toda manhã, uma reflexão bíblica curta e profunda. Dedique 3–5 minutos para ler e meditar.</p>
+        </div>
+      </div>
+      <div class="step-card reveal reveal-delay-3">
+        <div class="step-num">
+          <div class="step-icon">✅</div>
+          <div class="step-label">03</div>
+        </div>
+        <div>
+          <h3>Aplique na Vida</h3>
+          <p>Coloque em prática o aprendizado. Sua fé cresce quando sai do papel para a vida real.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  TESTIMONIALS
+══════════════════════════════════════ -->
+<section class="testimonials-section" id="depoimentos">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Depoimentos Reais</div>
+    <h2 class="section-title reveal" style="color:var(--dark-text);">Junte-se a quem já<br>transformou a rotina espiritual</h2>
+
+    <div class="social-counter reveal" role="note">
+      <span class="counter-icon">👥</span>
+      <span class="counter-text"><strong>+<span id="mainCounter">3.000</span> pessoas</strong> começaram essa semana</span>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial reveal reveal-delay-1">
+        <div class="stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="testimonial-text">"Transformou minha manhã! Agora começo o dia com a Palavra e me sinto mais preparada para enfrentar os desafios. Em apenas 5 minutos, já consigo sentir a presença de Deus."</p>
+        <div class="testimonial-author">
+          <div class="author-av" aria-hidden="true">M</div>
+          <div>
+            <div class="author-name">Maria Silva</div>
+            <div class="author-role">Professora — São Paulo, SP</div>
+            <div class="author-badge">✦ 87 dias de sequência</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial reveal reveal-delay-2">
+        <div class="stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="testimonial-text">"Finalmente consegui manter consistência na minha vida espiritual. As reflexões são profundas e práticas. Nunca mais perdi um dia desde que comecei há 3 meses."</p>
+        <div class="testimonial-author">
+          <div class="author-av" aria-hidden="true">J</div>
+          <div>
+            <div class="author-name">João Santos</div>
+            <div class="author-role">Empresário — Belo Horizonte, MG</div>
+            <div class="author-badge">✦ 90 dias de sequência</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial reveal reveal-delay-3">
+        <div class="stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="testimonial-text">"Como mãe de dois filhos, o tempo é escasso. O Hoje na Palavra é perfeito: rápido, profundo e aplicável. Já indiquei para toda a minha célula da igreja."</p>
+        <div class="testimonial-author">
+          <div class="author-av" aria-hidden="true">A</div>
+          <div>
+            <div class="author-name">Ana Rodrigues</div>
+            <div class="author-role">Enfermeira — Rio de Janeiro, RJ</div>
+            <div class="author-badge">✦ 60 dias de sequência</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial reveal reveal-delay-4">
+        <div class="stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="testimonial-text">"Estava em um momento difícil na minha fé e o Hoje na Palavra chegou no momento certo. Cada reflexão parece escrita especialmente para o que estou vivendo."</p>
+        <div class="testimonial-author">
+          <div class="author-av" aria-hidden="true">P</div>
+          <div>
+            <div class="author-name">Pedro Alves</div>
+            <div class="author-role">Músico — Curitiba, PR</div>
+            <div class="author-badge">✦ 45 dias de sequência</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  FAQ — Quebra de Objeções
+══════════════════════════════════════ -->
+<section class="faq-section" id="faq">
+  <div class="section-inner">
+    <div style="text-align:center;">
+      <div class="section-eyebrow reveal" style="justify-content:center;">Dúvidas Frequentes</div>
+      <h2 class="section-title reveal">Perguntas e Respostas</h2>
+      <p class="section-sub reveal" style="margin:0 auto 0.5rem;">Tudo que você precisa saber antes de começar.</p>
+    </div>
+
+    <div class="faq-grid" role="list">
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          É realmente gratuito? Haverá cobranças depois?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">Sim, 100% gratuito agora e sempre. Não há planos pagos, assinaturas ou cobranças ocultas. Nossa missão é democratizar o acesso à reflexão bíblica diária. Sustentamos o projeto com doações voluntárias e parcerias com ministérios.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Com que frequência recebo as reflexões?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">Uma reflexão por dia, todos os dias. Você recebe por e-mail e, se informar o WhatsApp, pelo aplicativo também. As reflexões chegam pela manhã, para você começar o dia com a Palavra.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Preciso instalar algum aplicativo?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">Não! As reflexões chegam direto no seu e-mail e WhatsApp, que você já usa todos os dias. Sem apps novos para instalar, sem login, sem complicação. Zero barreira para começar.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Posso cancelar quando quiser?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">Claro! Cada e-mail possui um link de descadastro fácil. É só clicar e você para de receber imediatamente, sem perguntas, sem burocracia. Mas esperamos que você fique! 🙏</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          As reflexões são baseadas em qual tradição cristã?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">As reflexões são ecumênicas e baseadas diretamente na Bíblia, sem filiar-se a denominações específicas. Servimos cristãos católicos, evangélicos, presbiterianos, batistas e de todas as tradições que amam a Palavra de Deus.</div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Meus dados estão seguros? (LGPD)
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">Seus dados são protegidos conforme a LGPD (Lei Geral de Proteção de Dados). Nunca vendemos, compartilhamos ou utilizamos suas informações para fins que não sejam o envio das reflexões. Você tem direito a acesso, correção e exclusão dos seus dados a qualquer momento.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  AUTHORITY / MISSION
+══════════════════════════════════════ -->
+<section class="authority" id="sobre">
+  <div class="section-inner" style="max-width:780px;">
+    <div class="section-eyebrow reveal" style="justify-content:center;">Nossa Missão</div>
+    <h2 class="section-title reveal" style="text-align:center;">Criado para fortalecer<br>a fé no dia a dia</h2>
+
+    <div class="authority-quote-wrap reveal">
+      <span class="quote-mark" aria-hidden="true">❝</span>
+      <p class="authority-quote">
+        "Porque a palavra de Deus é viva e eficaz, e mais penetrante do que qualquer espada de dois gumes, e penetra até à divisão da alma e do espírito."
+      </p>
+      <span class="authority-ref">— Hebreus 4:12</span>
+    </div>
+
+    <div class="divider-cross reveal" aria-hidden="true">✝</div>
+
+    <p class="authority-mission reveal">
+      Nossa missão é simples: ajudar você a manter uma vida espiritual consistente e significativa, mesmo em meio à correria. Acreditamos que <strong style="color:var(--gold-light);">pequenos momentos diários com Deus</strong> podem transformar completamente sua jornada. Conteúdo baseado na Palavra de Deus, sem distorções, sem agenda oculta — só fé genuína.
+    </p>
+
+    <div class="metrics-grid reveal">
+      <div class="metric">
+        <span class="metric-num" data-target="3247">+3mil</span>
+        <span class="metric-label">Membros ativos</span>
+      </div>
+      <div class="metric">
+        <span class="metric-num">100%</span>
+        <span class="metric-label">Gratuito sempre</span>
+      </div>
+      <div class="metric">
+        <span class="metric-num">365</span>
+        <span class="metric-label">Reflexões por ano</span>
+      </div>
+      <div class="metric">
+        <span class="metric-num">4.9★</span>
+        <span class="metric-label">Avaliação média</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  FINAL CTA
+══════════════════════════════════════ -->
+<section class="final-cta" id="cadastro">
+  <div class="final-cta-inner">
+    <h2 class="reveal">Sua jornada espiritual<br>começa <em>agora</em></h2>
+    <p class="reveal">Não deixe para amanhã o que pode transformar sua vida hoje. Dê o primeiro passo rumo a uma fé mais forte e consistente — é gratuito e leva menos de 60 segundos.</p>
+
+    <div id="finalFormWrap" class="reveal">
+      <div style="max-width:480px; margin:0 auto;">
+        <div class="form-group">
+          <span class="form-icon" aria-hidden="true">✉</span>
+          <input type="email" id="finalEmail" placeholder="Seu melhor e-mail" autocomplete="email" aria-label="Seu e-mail">
+        </div>
+        <div class="form-group phone-wrap" id="finalPhoneWrap">
+          <button class="country-select-btn" onclick="toggleDD('final')" type="button" aria-label="Selecionar país">
+            <span class="country-flag" id="finalFlag">&#x1F1E7;&#x1F1F7;</span>
+            <span class="country-code" id="finalCode">+55</span>
+            <span class="country-arrow" id="finalArrow" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="country-dropdown" id="finalDropdown" role="listbox">
+            <div class="country-search-wrap">
+              <input class="country-search" type="text" placeholder="Buscar país..." oninput="filterCountries(this,'final')" autocomplete="off">
+            </div>
+            <div class="country-list" id="finalCountryList"></div>
+          </div>
+          <input type="tel" class="phone-input" id="finalPhone" placeholder="Seu WhatsApp (opcional)" maxlength="20" oninput="phoneMask(this,'final')" aria-label="Número de WhatsApp">
+        </div>
+        <button class="btn-primary" id="finalCTA" onclick="handleSignup('final')" type="button">
+          Começar Minha Jornada — É Gratuito →
+        </button>
+        <div class="form-trust" style="justify-content:center;">
+          <span aria-hidden="true">🔒</span>
+          <span>100% Gratuito &bull; Sem spam &bull; Cancele quando quiser</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="thank-you-screen" id="finalThankYou" role="status" aria-live="polite">
+      <div class="ty-icon" aria-hidden="true">🙏</div>
+      <h3 class="ty-title">Bem-vindo à jornada!</h3>
+      <p class="ty-text">Você receberá a primeira reflexão amanhã cedo. Que Deus abençoe cada momento do seu dia.</p>
+      <div class="share-btns">
+        <button class="share-btn share-whatsapp" onclick="shareWhatsApp()" type="button">📱 Compartilhar no WhatsApp</button>
+        <button class="share-btn share-instagram" onclick="shareInstagram()" type="button">📸 Compartilhar no Instagram</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-logo">Hoje na <span>Palavra</span></div>
+  <div class="footer-tag">Fortalecendo a fé, um dia de cada vez. ✝</div>
+  <nav class="footer-links" aria-label="Links do rodapé">
+    <a href="javascript:void(0)" onclick="smt('inicio')">Início</a>
+    <a href="javascript:void(0)" onclick="smt('como-funciona')">Como Funciona</a>
+    <a href="javascript:void(0)" onclick="smt('depoimentos')">Depoimentos</a>
+    <a href="javascript:void(0)" onclick="smt('faq')">FAQ</a>
+    <a href="javascript:void(0)" onclick="smt('sobre')">Sobre</a>
+    <a href="mailto:contato@hojenapalavra.com.br">Contato</a>
+    <a href="#">Política de Privacidade</a>
+  </nav>
+  <div class="footer-lgpd">
+    <span>🔒</span>
+    <span>© 2026 Hoje na Palavra. Todos os direitos reservados. Dados protegidos pela LGPD.</span>
+  </div>
+</footer>
+
+<!-- CHAT WIDGET -->
+<div class="chat-widget" role="complementary" aria-label="Widget de feedback">
+  <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Deixe seu feedback" aria-modal="true">
+    <div class="chat-header">
+      <h4>💬 Deixe sua opinião</h4>
+      <p>Sua sugestão nos ajuda a crescer e melhorar!</p>
+    </div>
+    <div class="chat-body">
+      <div class="chat-field">
+        <label for="chatName">Nome</label>
+        <input type="text" id="chatName" placeholder="Seu nome">
+      </div>
+      <div class="chat-field">
+        <label for="chatEmail">E-mail</label>
+        <input type="email" id="chatEmail" placeholder="seu@email.com">
+      </div>
+      <div class="chat-field">
+        <label for="chatMsg">Mensagem</label>
+        <textarea id="chatMsg" rows="4" maxlength="300" placeholder="Sua sugestão ou opinião..." oninput="updateChar()"></textarea>
+        <div class="char-count"><span id="charCount">0</span>/300</div>
+      </div>
+      <button class="chat-submit" onclick="submitChat()" type="button">Enviar mensagem ✦</button>
+    </div>
+  </div>
+  <button class="chat-btn" onclick="toggleChat()" type="button" aria-label="Abrir widget de feedback" aria-expanded="false">
+    💬
+    <div class="chat-badge" aria-hidden="true"></div>
+  </button>
+</div>
+
+<script>
+'use strict';
+// ═══════════════════════════════════════════════════
+//  HOJE NA PALAVRA — Main Script
+//  Estratégia: performance-first, zero dependências
+// ═══════════════════════════════════════════════════
+
+// ── VERSES DATABASE ────────────────────────────────
+const VERSES = [
+  { t: "Venham a mim, todos os que estão cansados e sobrecarregados, e eu lhes darei descanso.", r: "Mateus 11:28" },
+  { t: "O Senhor é o meu pastor, e nada me faltará.", r: "Salmos 23:1" },
+  { t: "Tudo posso naquele que me fortalece.", r: "Filipenses 4:13" },
+  { t: "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito.", r: "João 3:16" },
+  { t: "Porque eu bem sei os pensamentos que tenho a vosso respeito, diz o Senhor; pensamentos de paz, e não de mal.", r: "Jeremias 29:11" },
+  { t: "A fé é a certeza daquilo que esperamos e a prova das coisas que não vemos.", r: "Hebreus 11:1" },
+  { t: "Confia no Senhor de todo o teu coração e não te apoies na tua própria prudência.", r: "Provérbios 3:5" },
+  { t: "Alegrai-vos sempre no Senhor; outra vez vos digo, alegrai-vos.", r: "Filipenses 4:4" },
+  { t: "Mas os que esperam no Senhor renovarão as suas forças. Voarão com asas como águias.", r: "Isaías 40:31" },
+  { t: "O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha.", r: "1 Coríntios 13:4" },
+  { t: "Não te preocupes com nada, mas em tudo, pela oração e súplicas, com ação de graças, apresentai os vossos pedidos a Deus.", r: "Filipenses 4:6" },
+  { t: "Porque sou eu que conheço os planos que tenho para vocês, diz o Senhor.", r: "Jeremias 29:11" },
+];
+
+// ── DAILY VERSE ────────────────────────────────────
+(function initVerse() {
+  const dayOfYear = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
+  const v = VERSES[dayOfYear % VERSES.length];
+  const tEl = document.getElementById('verseText');
+  const rEl = document.getElementById('verseRef');
+  if (tEl) tEl.textContent = `"${v.t}"`;
+  if (rEl) rEl.textContent = `— ${v.r}`;
+})();
+
+// ── PARTICLES ─────────────────────────────────────
+(function initParticles() {
+  const container = document.getElementById('particles');
+  if (!container) return;
+  const count = window.innerWidth < 600 ? 20 : 40;
+  const frag = document.createDocumentFragment();
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.cssText = `
+      left:${Math.random()*100}%;
+      top:${Math.random()*100}%;
+      width:${1 + Math.random()*2}px;
+      height:${1 + Math.random()*2}px;
+      --dur:${3 + Math.random()*4}s;
+      --delay:${Math.random()*4}s;
+    `;
+    frag.appendChild(p);
+  }
+  container.appendChild(frag);
+})();
+
+// ── MOCK CLOCK & DATE ──────────────────────────────
+(function initMock() {
+  const now = new Date();
+  const tEl = document.getElementById('mockTime');
+  const dEl = document.getElementById('mockDate');
+  if (tEl) tEl.textContent = now.toLocaleTimeString('pt-BR', { hour:'2-digit', minute:'2-digit' });
+  if (dEl) dEl.textContent = now.toLocaleDateString('pt-BR', { day:'2-digit', month:'short' });
+})();
+
+// ── COUNTRY DATA ───────────────────────────────────
+const COUNTRIES = [
+  { n:"Brasil",         d:"+55",  f:"&#x1F1E7;&#x1F1F7;", c:"BR" },
+  { n:"Portugal",       d:"+351", f:"&#x1F1F5;&#x1F1F9;", c:"PT" },
+  { n:"Estados Unidos", d:"+1",   f:"&#x1F1FA;&#x1F1F8;", c:"US" },
+  { n:"Argentina",      d:"+54",  f:"&#x1F1E6;&#x1F1F7;", c:"AR" },
+  { n:"Angola",         d:"+244", f:"&#x1F1E6;&#x1F1F4;", c:"AO" },
+  { n:"Moçambique",     d:"+258", f:"&#x1F1F2;&#x1F1FF;", c:"MZ" },
+  { n:"Cabo Verde",     d:"+238", f:"&#x1F1E8;&#x1F1FB;", c:"CV" },
+  { n:"Alemanha",       d:"+49",  f:"&#x1F1E9;&#x1F1EA;", c:"DE" },
+  { n:"Austrália",      d:"+61",  f:"&#x1F1E6;&#x1F1FA;", c:"AU" },
+  { n:"Bolívia",        d:"+591", f:"&#x1F1E7;&#x1F1F4;", c:"BO" },
+  { n:"Canadá",         d:"+1",   f:"&#x1F1E8;&#x1F1E6;", c:"CA" },
+  { n:"Chile",          d:"+56",  f:"&#x1F1E8;&#x1F1F1;", c:"CL" },
+  { n:"Colômbia",       d:"+57",  f:"&#x1F1E8;&#x1F1F4;", c:"CO" },
+  { n:"Equador",        d:"+593", f:"&#x1F1EA;&#x1F1E8;", c:"EC" },
+  { n:"Espanha",        d:"+34",  f:"&#x1F1EA;&#x1F1F8;", c:"ES" },
+  { n:"França",         d:"+33",  f:"&#x1F1EB;&#x1F1F7;", c:"FR" },
+  { n:"Itália",         d:"+39",  f:"&#x1F1EE;&#x1F1F9;", c:"IT" },
+  { n:"Japão",          d:"+81",  f:"&#x1F1EF;&#x1F1F5;", c:"JP" },
+  { n:"México",         d:"+52",  f:"&#x1F1F2;&#x1F1FD;", c:"MX" },
+  { n:"Paraguai",       d:"+595", f:"&#x1F1F5;&#x1F1FE;", c:"PY" },
+  { n:"Peru",           d:"+51",  f:"&#x1F1F5;&#x1F1EA;", c:"PE" },
+  { n:"Reino Unido",    d:"+44",  f:"&#x1F1EC;&#x1F1E7;", c:"GB" },
+  { n:"Suíça",          d:"+41",  f:"&#x1F1E8;&#x1F1ED;", c:"CH" },
+  { n:"Uruguai",        d:"+598", f:"&#x1F1FA;&#x1F1FE;", c:"UY" },
+  { n:"Venezuela",      d:"+58",  f:"&#x1F1FB;&#x1F1EA;", c:"VE" },
+];
+
+const sel = { hero: COUNTRIES[0], final: COUNTRIES[0] };
+
+function renderList(ctx, filter='') {
+  const list = document.getElementById(ctx+'CountryList');
+  if (!list) return;
+  const f = filter.toLowerCase();
+  const items = f
+    ? COUNTRIES.filter(c => c.n.toLowerCase().includes(f) || c.d.includes(f))
+    : COUNTRIES;
+  list.innerHTML = items.map(c => `
+    <div class="country-item${sel[ctx]?.c===c.c?' active':''}"
+         onclick="pickCountry('${ctx}','${c.c}')"
+         role="option"
+         aria-selected="${sel[ctx]?.c===c.c}">
+      <span class="ci-flag">${c.f}</span>
+      <span class="ci-name">${c.n}</span>
+      <span class="ci-dial">${c.d}</span>
+    </div>`).join('');
+}
+
+function pickCountry(ctx, code) {
+  const c = COUNTRIES.find(x => x.c === code);
+  if (!c) return;
+  sel[ctx] = c;
+  document.getElementById(ctx+'Flag').innerHTML = c.f;
+  document.getElementById(ctx+'Code').textContent = c.d;
+  closeAllDDs();
+  const ph = document.getElementById(ctx+'Phone');
+  if (ph) { ph.value = ''; ph.focus(); }
+}
+
+function toggleDD(ctx) {
+  const dd = document.getElementById(ctx+'Dropdown');
+  const ar = document.getElementById(ctx+'Arrow');
+  const wasOpen = dd.classList.contains('open');
+  closeAllDDs();
+  if (!wasOpen) {
+    dd.classList.add('open');
+    ar.classList.add('open');
+    renderList(ctx);
+    const s = dd.querySelector('.country-search');
+    if (s) { s.value=''; s.focus(); }
+  }
+}
+
+function closeAllDDs() {
+  ['hero','final'].forEach(ctx => {
+    const dd = document.getElementById(ctx+'Dropdown');
+    const ar = document.getElementById(ctx+'Arrow');
+    if (dd) dd.classList.remove('open');
+    if (ar) ar.classList.remove('open');
+  });
+}
+
+function filterCountries(inp, ctx) { renderList(ctx, inp.value); }
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('.phone-wrap')) closeAllDDs();
+});
+
+// ── PHONE MASK ─────────────────────────────────────
+function phoneMask(inp, ctx) {
+  const country = sel[ctx] || COUNTRIES[0];
+  let d = inp.value.replace(/\D/g,'');
+  if (country.c === 'BR') {
+    d = d.slice(0,11);
+    if      (d.length>7) inp.value = `(${d.slice(0,2)}) ${d.slice(2, d.length<=10?6:7)}-${d.slice(d.length<=10?6:7)}`;
+    else if (d.length>2) inp.value = `(${d.slice(0,2)}) ${d.slice(2)}`;
+    else if (d.length>0) inp.value = `(${d}`;
+  } else {
+    d = d.slice(0,12);
+    if      (d.length>8) inp.value = `${d.slice(0,3)} ${d.slice(3,6)} ${d.slice(6,9)} ${d.slice(9)}`;
+    else if (d.length>6) inp.value = `${d.slice(0,3)} ${d.slice(3,6)} ${d.slice(6)}`;
+    else if (d.length>3) inp.value = `${d.slice(0,3)} ${d.slice(3)}`;
+    else inp.value = d;
+  }
+}
+
+// ── AUTO-DETECT COUNTRY ────────────────────────────
+(function autoDetect() {
+  fetch('https://ipapi.co/json/', { signal: AbortSignal.timeout(3000) })
+    .then(r => r.json())
+    .then(data => {
+      const found = COUNTRIES.find(c => c.c === data.country_code);
+      if (!found) return;
+      ['hero','final'].forEach(ctx => {
+        sel[ctx] = found;
+        const f = document.getElementById(ctx+'Flag');
+        const cd = document.getElementById(ctx+'Code');
+        if (f)  f.innerHTML = found.f;
+        if (cd) cd.textContent = found.d;
+      });
+    })
+    .catch(() => {}); // silently fail
+})();
+
+// ── SIGNUP HANDLER ─────────────────────────────────
+function handleSignup(ctx) {
+  const emailEl = document.getElementById(ctx==='hero'?'heroEmail':'finalEmail');
+  const phoneEl = document.getElementById(ctx==='hero'?'heroPhone':'finalPhone');
+  const formEl  = document.getElementById(ctx==='hero'?'heroFormWrap':'finalFormWrap');
+  const tyEl    = document.getElementById(ctx==='hero'?'heroThankYou':'finalThankYou');
+  const btnEl   = document.getElementById(ctx==='hero'?'heroCTA':'finalCTA');
+
+  if (!emailEl) return;
+  const email = emailEl.value.trim();
+  const phone = phoneEl ? phoneEl.value.trim() : '';
+
+  // Validate email
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    emailEl.classList.add('error');
+    setTimeout(() => emailEl.classList.remove('error'), 2000);
+    emailEl.focus();
+    return;
+  }
+
+  // Loading state
+  if (btnEl) {
+    btnEl.innerHTML = '<span class="btn-loading"><span class="spinner"></span> Processando...</span>';
+    btnEl.disabled = true;
+  }
+
+  // Simulate API call (replace with real endpoint)
+  setTimeout(() => {
+    // Store lead data (in production, POST to your API/webhook)
+    const lead = { email, phone, country: sel[ctx]?.d, ts: new Date().toISOString(), source: ctx };
+    try {
+      const leads = JSON.parse(sessionStorage.getItem('hnp_leads') || '[]');
+      leads.push(lead);
+      sessionStorage.setItem('hnp_leads', JSON.stringify(leads));
+    } catch(e) {}
+
+    // Animate transition
+    formEl.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
+    formEl.style.opacity = '0';
+    formEl.style.transform = 'translateY(-12px)';
+
+    setTimeout(() => {
+      formEl.style.display = 'none';
+      tyEl.classList.add('show');
+
+      // Auto-reset after 5s
+      setTimeout(() => {
+        tyEl.style.transition = 'opacity 0.4s ease';
+        tyEl.style.opacity = '0';
+        setTimeout(() => {
+          tyEl.classList.remove('show');
+          tyEl.style.opacity = '';
+          tyEl.style.transition = '';
+          emailEl.value = '';
+          if (phoneEl) phoneEl.value = '';
+          if (btnEl) { btnEl.innerHTML = ctx==='hero'?'Quero receber a Palavra diária →':'Começar Minha Jornada — É Gratuito →'; btnEl.disabled = false; }
+          formEl.style.display = '';
+          formEl.style.opacity = '0';
+          formEl.style.transform = 'translateY(12px)';
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            formEl.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
+            formEl.style.opacity = '1';
+            formEl.style.transform = 'translateY(0)';
+            setTimeout(() => { formEl.style.transition = formEl.style.transform = formEl.style.opacity = ''; }, 500);
+          }));
+        }, 420);
+      }, 5000);
+    }, 370);
+  }, 800);
+}
+
+// ── SHARE ──────────────────────────────────────────
+function shareWhatsApp() {
+  const msg = encodeURIComponent('Encontrei o Hoje na Palavra e tem sido incrível para minha vida espiritual! Reflexões bíblicas diárias em 5 minutos. Vem comigo! 🙏 https://hojenapalavra.com.br');
+  window.open(`https://wa.me/?text=${msg}`, '_blank', 'noopener');
+}
+
+function shareInstagram() {
+  const text = 'Reflexões bíblicas diárias em 5 minutos. Junte-se ao Hoje na Palavra! 🙏 hojenapalavra.com.br';
+  navigator.clipboard.writeText(text)
+    .then(() => alert('Link copiado! Cole no seu Instagram Stories ou Feed. 🙏'))
+    .catch(() => {});
+}
+
+// ── SCROLL REVEAL ──────────────────────────────────
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+// ── COUNTER ANIMATION ──────────────────────────────
+function animCounter(el, target) {
+  if (!el) return;
+  let start = null;
+  const duration = 2200;
+  const step = ts => {
+    if (!start) start = ts;
+    const p = Math.min((ts - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    const val = Math.floor(ease * target);
+    el.textContent = val.toLocaleString('pt-BR');
+    if (p < 1) requestAnimationFrame(step);
+    else el.textContent = target.toLocaleString('pt-BR');
+  };
+  requestAnimationFrame(step);
+}
+
+const counterObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    const target = parseInt(el.dataset.target || el.textContent.replace(/\D/g,''));
+    if (target) animCounter(el, target);
+    counterObs.unobserve(el);
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.stat-number[data-target]').forEach(el => counterObs.observe(el));
+
+// Counter for main counter in testimonials
+const mainCounterEl = document.getElementById('mainCounter');
+if (mainCounterEl) {
+  const obs2 = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) { animCounter(mainCounterEl, 3247); obs2.disconnect(); }
+  }, { threshold: 0.5 });
+  obs2.observe(mainCounterEl);
+}
+
+// ── LIVE COUNT ANIMATION ───────────────────────────
+(function animLiveCount() {
+  const el = document.getElementById('liveCount');
+  if (!el) return;
+  let base = 47;
+  setInterval(() => {
+    if (Math.random() > 0.7) { base += Math.floor(Math.random() * 3) + 1; el.textContent = base; }
+  }, 8000);
+})();
+
+// ── TOAST SOCIAL PROOF ────────────────────────────
+const TOAST_DATA = [
+  { name:'Maria S.', msg:'Se inscreveu agora em São Paulo', av:'M' },
+  { name:'João P.',  msg:'Está no 14º dia de sequência 🔥', av:'J' },
+  { name:'Ana R.',   msg:'Compartilhou com 3 amigas', av:'A' },
+  { name:'Pedro A.', msg:'Se inscreveu em Curitiba', av:'P' },
+  { name:'Carla M.', msg:'Está no 30º dia consecutivo 🎉', av:'C' },
+  { name:'Lucas F.', msg:'Se inscreveu agora em Brasília', av:'L' },
+  { name:'Sofia D.', msg:'Indicou para toda a célula', av:'S' },
+  { name:'Rafael T.', msg:'Se inscreveu em Porto Alegre', av:'R' },
+];
+
+function showToast(data) {
+  const container = document.getElementById('toast-container');
+  if (!container) return;
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.setAttribute('role', 'status');
+  toast.setAttribute('aria-live', 'polite');
+  toast.innerHTML = `
+    <div class="toast-avatar" aria-hidden="true">${data.av}</div>
+    <div class="toast-content">
+      <div class="toast-name">${data.name}</div>
+      <div class="toast-msg">${data.msg}</div>
+    </div>`;
+  container.appendChild(toast);
+  setTimeout(() => {
+    toast.classList.add('out');
+    setTimeout(() => toast.remove(), 350);
+  }, 4500);
+}
+
+(function scheduleToasts() {
+  let idx = 0;
+  function next() {
+    showToast(TOAST_DATA[idx % TOAST_DATA.length]);
+    idx++;
+    setTimeout(next, 7000 + Math.random() * 4000);
+  }
+  setTimeout(next, 4000);
+})();
+
+// ── FAQ ACCORDION ─────────────────────────────────
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-question').setAttribute('aria-expanded','false');
+  });
+  if (!isOpen) {
+    item.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+  }
+}
+
+// ── MOBILE MENU ───────────────────────────────────
+document.getElementById('hamburger').addEventListener('click', function() {
+  const menu = document.getElementById('mobileMenu');
+  const isOpen = menu.classList.toggle('open');
+  this.setAttribute('aria-expanded', isOpen);
+  const spans = this.querySelectorAll('span');
+  if (isOpen) {
+    spans[0].style.cssText = 'transform:rotate(45deg) translate(5px,5px)';
+    spans[1].style.cssText = 'opacity:0;transform:scaleX(0)';
+    spans[2].style.cssText = 'transform:rotate(-45deg) translate(5px,-5px)';
+  } else {
+    spans.forEach(s => s.style.cssText = '');
+  }
+});
+
+function closeMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const btn  = document.getElementById('hamburger');
+  menu.classList.remove('open');
+  btn.setAttribute('aria-expanded','false');
+  btn.querySelectorAll('span').forEach(s => s.style.cssText = '');
+}
+
+// ── CHAT WIDGET ───────────────────────────────────
+function toggleChat() {
+  const panel = document.getElementById('chatPanel');
+  const btn   = document.querySelector('.chat-btn');
+  const badge = document.querySelector('.chat-badge');
+  panel.classList.toggle('open');
+  btn.setAttribute('aria-expanded', panel.classList.contains('open'));
+  if (badge) badge.style.display = 'none';
+}
+
+function updateChar() {
+  const el = document.getElementById('chatMsg');
+  const count = document.getElementById('charCount');
+  if (el && count) count.textContent = el.value.length;
+}
+
+function submitChat() {
+  const name = document.getElementById('chatName')?.value.trim();
+  const msg  = document.getElementById('chatMsg')?.value.trim();
+  if (!name || !msg) { alert('Por favor, preencha nome e mensagem.'); return; }
+  const body = document.querySelector('.chat-body');
+  if (body) body.innerHTML = `
+    <div style="text-align:center;padding:1.5rem 1rem;">
+      <div style="font-size:2.2rem;margin-bottom:0.8rem;">🙏</div>
+      <h4 style="font-family:var(--serif);font-size:1.1rem;margin-bottom:0.5rem;">Obrigado, ${name}!</h4>
+      <p style="font-size:0.85rem;color:var(--muted);line-height:1.6;">Sua mensagem foi recebida. Ela nos ajuda a melhorar cada dia.</p>
+    </div>`;
+  setTimeout(toggleChat, 2500);
+}
+
+// ── SMOOTH SCROLL ─────────────────────────────────
+function smt(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const navH = document.getElementById('navbar')?.offsetHeight || 70;
+  window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - navH - 12, behavior: 'smooth' });
+}
+
+// ── NAVBAR SCROLL ─────────────────────────────────
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  const nav = document.getElementById('navbar');
+  if (y > 60) nav.classList.add('scrolled');
+  else nav.classList.remove('scrolled');
+  lastScroll = y;
+}, { passive: true });
+
+// ── ESCAPE KEY: close dropdowns & menus ───────────
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeAllDDs();
+    closeMobileMenu();
+    const panel = document.getElementById('chatPanel');
+    if (panel.classList.contains('open')) toggleChat();
+  }
+});
+</script>
+</body>
+</html>
